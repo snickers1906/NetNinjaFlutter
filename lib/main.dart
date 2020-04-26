@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -6,16 +7,24 @@ void main() {
       appBar: AppBar(
         title: Text('basketGo'),
         centerTitle: true,
-        backgroundColor: Color(345),
+        backgroundColor: Colors.orange[900],
       ),
       body: Center(
-          child: Text('hello basketmaniacs!'),
+        child: Text(
+          'hello basketmaniacs!',
+          style: TextStyle(
+            fontSize: 30.0,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 2,
+            color: Colors.blueAccent,
+          ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
+        onPressed: () {},
         child: Text('click'),
+        backgroundColor: Colors.orange[900],
       ),
     ),
   ));
 }
-
-
